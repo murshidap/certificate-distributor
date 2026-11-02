@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #006382;
+  --color-primary-dim: #005672;
+  --color-ice: #7dd3fc;
+  --color-ice-dim: #38bdf8;
+  --color-surface: #f5f6ff;
+  --color-surface-dim: #e0e8ff;
+  --color-on-surface: #1e293b;
+  --color-on-surface-variant: #525b72;
+  --color-tertiary: #6f4b94;
+  --color-tertiary-light: #c8a0f0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at 10% 20%, rgba(224, 232, 255, 0.6) 0%, rgba(245, 246, 255, 1) 90%), #f5f6ff;
+  color: var(--color-on-surface);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphism Classes adhering to Glacier Spec */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(125, 211, 252, 0.25);
+  box-shadow: 0 4px 20px -2px rgba(0, 99, 130, 0.05), 0 0 30px rgba(125, 211, 252, 0.08);
+}
+
+.glass-panel-elevated {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  box-shadow: 0 10px 30px -4px rgba(0, 99, 130, 0.08), 0 0 40px rgba(125, 211, 252, 0.12);
+}
+
+.glass-subtle {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(125, 211, 252, 0.18);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(125, 211, 252, 0.3);
+  transition: all 0.2s ease;
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: #006382;
+  box-shadow: 0 0 0 3px rgba(125, 211, 252, 0.25), 0 0 16px rgba(125, 211, 252, 0.15);
+  outline: none;
+}
+
+/* Custom scrollbar for sleek studio look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(224, 232, 255, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(109, 119, 142, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 99, 130, 0.5);
+}

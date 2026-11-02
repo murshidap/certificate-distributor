@@ -1,0 +1,6 @@
+{
+  "name": "CertiGlacier - Bulk Certificate Studio",
+  "description": "Professional certificate design, dynamic text mapping, Excel/CSV bulk generation, preview, PDF/ZIP download, and automated email distribution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

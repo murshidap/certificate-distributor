@@ -1,0 +1,98 @@
+---
+name: Glacier
+colors:
+  surface: '#f5f6ff'
+  surface-dim: '#c4d4fb'
+  surface-bright: '#f5f6ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#edf0ff'
+  surface-container: '#e0e8ff'
+  surface-container-high: '#d8e2ff'
+  surface-container-highest: '#cfddff'
+  on-surface: '#252f43'
+  on-surface-variant: '#525b72'
+  inverse-surface: '#040e21'
+  inverse-on-surface: '#939db6'
+  outline: '#6d778e'
+  outline-variant: '#a3adc7'
+  surface-tint: '#006382'
+  primary: '#006382'
+  primary-dim: '#005672'
+  on-primary: '#e5f5ff'
+  primary-container: '#7bd1fa'
+  on-primary-container: '#00465d'
+  inverse-primary: '#7bd1fa'
+  secondary: '#346176'
+  secondary-dim: '#27556a'
+  on-secondary: '#e6f5ff'
+  secondary-container: '#b1ddf7'
+  on-secondary-container: '#215065'
+  tertiary: '#6f4b94'
+  tertiary-dim: '#623f87'
+  on-tertiary: '#fbefff'
+  tertiary-container: '#d6adff'
+  on-tertiary-container: '#4c2970'
+  error: '#b31b25'
+  error-dim: '#9f0519'
+  on-error: '#ffefee'
+  error-container: '#fb5151'
+  on-error-container: '#570008'
+  primary-fixed: '#7bd1fa'
+  primary-fixed-dim: '#6cc3eb'
+  on-primary-fixed: '#003041'
+  on-primary-fixed-variant: '#004f69'
+  secondary-fixed: '#b1ddf7'
+  secondary-fixed-dim: '#a3cfe8'
+  on-secondary-fixed: '#063d51'
+  on-secondary-fixed-variant: '#2c596f'
+  tertiary-fixed: '#d6adff'
+  tertiary-fixed-dim: '#c8a0f0'
+  on-tertiary-fixed: '#361059'
+  on-tertiary-fixed-variant: '#55327a'
+  background: '#f5f6ff'
+  on-background: '#252f43'
+  surface-variant: '#cfddff'
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+---
+
+# Glacier — Glassmorphism
+
+## North Star: "Frozen Light"
+Ethereal depth through layered translucent surfaces. Light, atmospheric, and premium.
+
+## Colors
+- **Primary (`#7dd3fc`):** Ice-blue for interactive elements and accents.
+- **Background (`#f0f4f8`):** Light atmospheric base.
+- **Tertiary (`#c8a0f0`):** Soft lavender for secondary accents.
+- All surface containers should feel like tinted glass layers.
+
+## Glass Effect (Core Pattern)
+- **Cards/Panels:** `background: rgba(255, 255, 255, 0.7)`, `backdrop-filter: blur(16px)`, `border: 1px solid rgba(125, 211, 252, 0.2)`.
+- **Elevated glass:** Increase opacity to 0.85 and blur to 24px.
+- **Borders:** Always use semi-transparent primary or dark neutral at 8-15% opacity.
+
+## Typography
+- **All fonts:** Inter for clean, modern readability.
+- Headlines: semibold, slightly tracked. Body: regular weight.
+- Text colors: `on_surface` for primary, `on_surface_variant` for secondary.
+
+## Elevation
+- Depth through blur intensity and opacity, not heavy shadows.
+- Layer 0: solid light background. Layer 1: 70% opacity + 16px blur. Layer 2: 85% + 24px blur.
+- Subtle glow effects: `box-shadow: 0 0 30px rgba(125, 211, 252, 0.1)`.
+
+## Components
+- **Buttons:** Primary = semi-transparent primary fill with border. Hover = increase opacity.
+- **Cards:** Frosted glass with thin luminous border.
+- **Inputs:** Glass background, thin border, glow on focus.
+
+## Rules
+- Never use opaque solid backgrounds on floating elements.
+- Keep borders subtle — luminous, not structural.
+- Limit glow effects to interactive states.
